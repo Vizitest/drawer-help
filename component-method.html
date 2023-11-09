@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="./help.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a02dd6ac3d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- VIDEO -->
+      <div class="video">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/882395005?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Vizitest Overview"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="./vimeo.js"></script>
+      </div>
+      <div class="main-content">
+        <!-- INTRO -->
+        <div class="intro">
+          <p>
+            <strong>Equivalence Class Partitioning</strong> is powerful and,
+            once you get the hang of it, straightforward.
+          </p>
+          <p>
+            If you are new to Vizitest, we recommend watching the whole video to
+            see how to test a Method. You can also use the buttons below to jump
+            to specific points in the video or jump to the docs.
+          </p>
+          <!-- MAIN DOCS LINK -->
+          <a href="https://docs.vizitest.com/method-component.html">
+            <div class="main-docs-link">Method Component - Docs</div>
+          </a>
+        </div>
+        <!-- TERMS -->
+        <div class="terms">
+          <!-- EC Partitioning -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Equivalence Class Partitioning</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Method Configuration`)"
+              ></i>
+              <a href="https://docs.vizitest.com/theory-ecs.html"
+                ><i class="fa-light fa-file-doc button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              A technique for dividing input and output data into sets of
+              equivalent values. This is useful for generating test cases. This
+              will make a lot more sense if you watch the video.
+            </div>
+          </div>
+          <!-- EC -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Equivalence Classes</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Method Configuration`)"
+              ></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              <strong>See how to work with Equivalence Classes</strong>. An
+              Equivalence class is a set of data, whose Representative Values
+              are all considered to yield the same result when used for a method
+              input parameter. When used in the Output section of the component,
+              it contains a set of values, all of which are considered valid.
+            </div>
+          </div>
+          <!--  R VALUE -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Representative Values</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              <strong>See how to work with Representative Values</strong>, which
+              belong to Equivalence Classes. Often, a single value within an
+              Equivalence Class is sufficient for Test Case creation. Values
+              will be available in the Test Case Table.
+            </div>
+          </div>
+          <!--  INPUT -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Input - method parameters</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              The <strong>INPUT</strong> column contain a list of all method
+              parameters. Each parameter will usually have a
+              <span style="color: green">valid</span> and an
+              <span style="color: red">invalid</span> Equivalence Class.
+            </div>
+          </div>
+          <!--  OUTPUT - RETURN VALUES -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Return Values</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              The <strong>Return Values</strong> deals with the data returned by
+              the method. There is usually a
+              <span style="color: green">valid</span> Equivalence Class that
+              contains all possible return values and an
+              <span style="color: red">invalid</span> Equivalence Class.
+            </div>
+          </div>
+          <!--  OUTPUT - EXCEPTIONS -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Exceptions</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              If the method throws an <strong>Exception</strong>, you can choose
+              from a list of all Exceptions or use the general Exception for any
+              exception.
+            </div>
+          </div>
+          <!--  TEST CASE TABLE -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Test Case Table</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              Once you have configured your Inputs and Outputs (and assuming
+              you're not using Custom Assertions or Side Effects), you might
+              want to look at the <strong>Test Case Table</strong>. This should
+              already be on the canvas.
+            </div>
+          </div>
+          <!--  OUTPUT - CUSTOM ASSERTIONS -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Custom Assertions</p>
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+            </div>
+            <div class="summary-row">
+              You can write your own <strong>Custom</strong> Assertion code to
+              evaluate the data returned and assert a true or false result.
+            </div>
+          </div>
+          <!--  OUTPUT - SIDE EFFECTS -->
+          <div class="item-row">
+            <div class="title-row">
+              <i class="fa-light fa-video button"></i>
+              <i class="fa-light fa-file-doc button"></i>
+              <p class="item-text">Side Effects</p>
+            </div>
+            <div class="summary-row">
+              Used in combination with the Instance Component, this allows you
+              to detect whether the method modified an Instance. A Test Case in
+              the Test Case Table can then examine the side effect to determine
+              if the test should pass or fail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
