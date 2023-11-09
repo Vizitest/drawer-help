@@ -35,50 +35,57 @@ a:link {
 
 .main-content {
   z-index: 0;
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 
 .intro {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 10px 20px 4px 20px;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 16px 20px 4px 20px;
   margin-bottom: 20px;
-  background-color: #767676;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 .main-docs-link {
-  background-color: #f4f4f4;
-  color: #444444;
-  margin: 16px auto;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgba(65, 101, 148, 1);
+  color: white;
+  margin: 18px auto;
   border-radius: 99px;
   width: fit-content;
-  padding: 5px 20px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
 .item-row {
   display: flex;
   flex-direction: column;
-  padding: 5px 10px;
+  padding: 5px 0px;
   margin-bottom: 5px;
   border-radius: 8px;
 }
 
 .title-row {
   display: flex;
+  position: relative;
   align-items: center;
   width: 100%;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: px;
+  #background-color: #f1f1f1;
+  padding: 5px;
+}
+.title-row:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 11px;
+  width: 400px;
+  height: 1px;
+  background-color: #474747;
 }
 
 .summary-row {
-  padding: 5px 10px;
+  padding: 5px 16px;
   font-weight: 400;
 }
 
@@ -93,7 +100,7 @@ a:link {
 i.button {
   font-size: 15px;
   margin-right: 10px;
-  background-color: rgba(65, 148, 109, 1);
+  background-color: rgb(161 161 161);
   color: white;
   border-radius: 99px;
   padding: 5px;
