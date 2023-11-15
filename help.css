@@ -102,6 +102,10 @@ i.button {
   cursor: pointer;
 }
 
+.fa-video.button {
+  color: #cccccc;
+}
+
 .no-button {
   width: 48px;
 }

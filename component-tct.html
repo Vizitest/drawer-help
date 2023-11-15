@@ -44,26 +44,34 @@
         <!-- INTRO -->
         <div class="intro">
           <p>
-            The Method Component uses
-            <strong>Equivalence Class Partitioning</strong>, a powerful and
-            logical way of defining test case data.
+            The Test Case table consists of columns, each of which contains a
+            Test Case. Test Cases can be added manually or automatically.
+          </p>
+          <p>
+            The data (inputs and outputs) used for a Test Case is determined by
+            the Equivalence Classes and Representative Values you configured in
+            your Instance and Method components.
           </p>
           <p>
             If you are new to Vizitest, we recommend watching the whole video to
-            see how to test a Method. You can also use the buttons below to jump
-            to specific points in the video or docs.
+            see how Equivalence Class Partitioning and the Test Case Table work.
           </p>
           <!-- MAIN DOCS LINK -->
-          <a href="https://docs.vizitest.com/method-component.html">
-            <div class="main-docs-link">Method Component - Docs</div>
+          <a href="https://docs.vizitest.com/test-case-table.html">
+            <div class="main-docs-link">Test Case Table - Docs</div>
           </a>
+          <!-- WARNING -->
+          <h3 style="text-align: center; margin-top: 40px; color: red">
+            Please ignore the video and video link buttons. We are preparing a
+            brand new video. Docs links are working.
+          </h3>
         </div>
         <!-- TERMS -->
         <div class="terms">
-          <!-- EC Partitioning -->
+          <!-- OVERVIEW-->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Equivalence Class Partitioning</p>
+              <p class="item-text">Overview</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
@@ -78,158 +86,124 @@
               will make a lot more sense if you watch the video.
             </div>
           </div>
-          <!-- EC -->
+          <!-- MANUAL TC -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Working with Equivalence Classes</p>
+              <p class="item-text">Adding a manual Test Case</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/ec-r-value-settings.html#adding-an-equivalence-class-to-a-method"
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              An Equivalence class is a set of data, whose Representative Values
-              are all considered to yield the same result when used for a method
-              input parameter. When used in the Output section of the component,
-              it contains a set of values, all of which are considered valid.
+              In many cases, you will want to test with specific cases you
+              choose. This is not as thorough as the automatic approach, but it
+              is a good way to start, so you see what is involved in selecting
+              inputs and outputs.
             </div>
           </div>
-          <!--  R VALUE -->
+          <!--  AUTOMATIC TC -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Working with Representative Values</p>
+              <p class="item-text">Automatically generating Test Cases.</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/ec-r-value-settings.html#adding-a-representative-value"
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              Representative Values are children of Equivalence Classes. Often,
-              a single value within an Equivalence Class is sufficient for Test
-              Case creation. Values will be available in the Test Case Table.
+              Vizitest uses the best-practice "Pairwise Combination" algorithm
+              to automatically generate Test Cases for you. It generates the
+              optimal number of test cases, not every possible test case. The
+              more Representative Values you have, the more Test Cases you will
+              end up with.
             </div>
           </div>
-          <!--  INPUT -->
+          <!--  INPUT SELECTION -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Input - method parameters</p>
+              <p class="item-text">Input Selection</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/practice-ecs.html#input-parameters"
+                href="https://docs.vizitest.com/test-case-table.html#method-inputs"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              The INPUT column contain a list of all method parameters. Each
-              parameter will usually have a
-              <span style="color: green">valid</span> and an
-              <span style="color: red">invalid</span> Equivalence Class.
+              If you add manual test cases, then you should first select the
+              Inputs data you want to use. When you click in an Input test case
+              cell, you will see the available values, as defined in your
+              Instance or Method components.
             </div>
           </div>
-          <!--  OUTPUT - RETURN VALUES -->
+          <!--  OUTPUT - MATCHING -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Return Values</p>
+              <p class="item-text">Output Matching</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/practice-ecs.html#output-expected-values"
+                href="https://docs.vizitest.com/test-case-table.html#matching-method-outputs-to-inputs"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              The Return Values deal with the data returned by the method. There
-              is usually a
-              <span style="color: green">valid</span> Equivalence Class that
-              contains all possible return values and an
-              <span style="color: red">invalid</span> Equivalence Class.
+              Both automatically and manually created test cases require that,
+              for each test case, you select an Output value that is expected
+              for the corresponding inputs. You cannot generate your test code
+              until all outputs are matched.
             </div>
           </div>
-          <!--  OUTPUT - EXCEPTIONS -->
+          <!--  RENAMING -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Exceptions</p>
+              <p class="item-text">Renaming Test Cases</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/practice-ecs.html#output-exceptions"
+                href="https://docs.vizitest.com/test-case-table.html#test-case-name-description-and-link"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              If the method throws an <strong>Exception</strong>, you can choose
-              from a list of all Exceptions or use the general Exception for any
-              exception.
+              Test case names are created automatically. There is no need to
+              rename them but the benefit of doing so is clearer labelling in
+              your test execution output.
             </div>
           </div>
-          <!--  TEST CASE TABLE -->
+          <!--  CODEGEN -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Test Case Table</p>
+              <p class="item-text">Generating test code</p>
               <i
                 class="fa-light fa-video button"
                 onclick="playVideo(`Method Configuration`)"
               ></i>
-              <a href="https://docs.vizitest.com/test-case-table.html"
+              <a href="https://docs.vizitest.com/codegen.html"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              Once you have configured your Inputs and Outputs (and assuming
-              you're not using Custom Assertions or Side Effects), you might
-              want to look at the <strong>Test Case Table</strong>. This should
-              already be on the canvas.
-            </div>
-          </div>
-          <!--  OUTPUT - CUSTOM ASSERTIONS -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Custom Assertions</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
-              <a href="https://docs.vizitest.com/custom-assertions.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              You can write your own <strong>Custom</strong> Assertion code to
-              evaluate the data returned and assert a true or false result.
-            </div>
-          </div>
-          <!--  OUTPUT - SIDE EFFECTS -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Side Effects</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
-              <a href="https://docs.vizitest.com/side-effects.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Used in combination with the Instance Component, this allows you
-              to detect whether the method modified an Instance. A Test Case in
-              the Test Case Table can then examine the side effect to determine
-              if the test should pass or fail.
+              The final step is to generate your test code. To do this, you
+              press the Generate Code button in the Test Case Table. This will
+              only work once you have got at least one test case, set the
+              necessary inputs and matched the outputs.
             </div>
           </div>
         </div>
