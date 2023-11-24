@@ -24,7 +24,7 @@
       <div class="video">
         <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe
-            src="https://player.vimeo.com/video/882395005?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+            src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             style="
@@ -43,57 +43,32 @@
       <div class="main-content">
         <!-- INTRO -->
         <div class="intro">
-          <p>
-            The Test Case table consists of columns, each of which contains a
-            Test Case. Test Cases can be added manually or automatically.
-          </p>
-          <p>
-            The data (inputs and outputs) used for a Test Case is determined by
-            the Equivalence Classes and Representative Values you configured in
-            your Instance and Method components.
-          </p>
-          <p>
-            If you are new to Vizitest, we recommend watching the whole video to
-            see how Equivalence Class Partitioning and the Test Case Table work.
-          </p>
           <!-- MAIN DOCS LINK -->
           <a href="https://docs.vizitest.com/test-case-table.html">
             <div class="main-docs-link">Test Case Table - Docs</div>
           </a>
-          <!-- WARNING -->
-          <h3 style="text-align: center; margin-top: 40px; color: red">
-            Please ignore the video and video link buttons. We are preparing a
-            brand new video. Docs links are working.
-          </h3>
         </div>
         <!-- TERMS -->
         <div class="terms">
-          <!-- OVERVIEW-->
+          <!-- RECAP  -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Overview</p>
+              <p class="item-text">Context</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Adding Values`)"
               ></i>
-              <a href="https://docs.vizitest.com/theory-ecs.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
             </div>
             <div class="summary-row">
-              A technique for dividing input and output data into sets of
-              equivalent values. This is useful for generating test cases. This
-              will make a lot more sense if you watch the video.
+              If you want to see information and background on where the data
+              for the following video sections is taken from
             </div>
           </div>
+
           <!-- MANUAL TC -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Adding a manual Test Case</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
+              <p class="item-text">Adding an individual Test Case</p>
               <a
                 href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
                 ><i class="fa-light fa-book button"></i
@@ -101,22 +76,20 @@
             </div>
             <div class="summary-row">
               In many cases, you will want to test with specific cases you
-              choose. This is not as thorough as the automatic approach, but it
-              is a good way to start, so you see what is involved in selecting
-              inputs and outputs.
+              choose rather than asking Vizitest to generate them for you.
             </div>
           </div>
+
           <!--  AUTOMATIC TC -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Automatically generating Test Cases.</p>
+              <p class="item-text">Automatically generating Test Cases</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Generating Test Cases`)"
               ></i>
               <a
                 href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
-                ><i class="fa-light fa-book button"></i
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
@@ -128,82 +101,44 @@
               end up with.
             </div>
           </div>
-          <!--  INPUT SELECTION -->
+
+          <!--  MATCHING OUTPUTS -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Input Selection</p>
+              <p class="item-text">Matching outputs to inputs</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Matching outputs`)"
               ></i>
               <a
-                href="https://docs.vizitest.com/test-case-table.html#method-inputs"
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              If you add manual test cases, then you should first select the
-              Inputs data you want to use. When you click in an Input test case
-              cell, you will see the available values, as defined in your
-              Instance or Method components.
+              Vizitest uses the best-practice "Pairwise Combination" algorithm
+              to automatically generate Test Cases for you. It generates the
+              optimal number of test cases, not every possible test case. The
+              more Representative Values you have, the more Test Cases you will
+              end up with.
             </div>
           </div>
-          <!--  OUTPUT - MATCHING -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Output Matching</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/test-case-table.html#matching-method-outputs-to-inputs"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Both automatically and manually created test cases require that,
-              for each test case, you select an Output value that is expected
-              for the corresponding inputs. You cannot generate your test code
-              until all outputs are matched.
-            </div>
-          </div>
-          <!--  RENAMING -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Renaming Test Cases</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/test-case-table.html#test-case-name-description-and-link"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Test case names are created automatically. There is no need to
-              rename them but the benefit of doing so is clearer labelling in
-              your test execution output.
-            </div>
-          </div>
+
           <!--  CODEGEN -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Generating test code</p>
+              <p class="item-text">Generating and running test code</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Generating the test code`)"
               ></i>
-              <a href="https://docs.vizitest.com/codegen.html"
+              <a href="https://docs.vizitest.com/test-case-table.html"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              The final step is to generate your test code. To do this, you
-              press the Generate Code button in the Test Case Table. This will
-              only work once you have got at least one test case, set the
-              necessary inputs and matched the outputs.
+              Once you've matched your inputs and outputs, you're ready to
+              generate and run your test code.
             </div>
           </div>
         </div>

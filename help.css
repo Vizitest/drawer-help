@@ -43,6 +43,7 @@ a:link {
   font-weight: 200;
   padding: 16px 20px 4px 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .main-docs-link {
@@ -70,7 +71,6 @@ a:link {
   position: relative;
   align-items: center;
   width: 100%;
-  #background-color: #f1f1f1;
   padding: 5px;
 }
 
@@ -102,9 +102,9 @@ i.button {
   cursor: pointer;
 }
 
-.fa-video.button {
+/* .fa-video.button {
   color: #cccccc;
-}
+} */
 
 .no-button {
   width: 48px;
@@ -117,7 +117,7 @@ i.button {
 }
 
 .quick-help {
-  .border-radius: 99px;
+  border-radius: 99px;
   width: 30px;
   height: 30px;
 }
@@ -128,7 +128,6 @@ i.button {
 
 .quick-help:hover > .quick-help-hover {
   display: inline;
-  position: rela;
   width: 500px;
   max-width: 500px;
   background-color: #707070;
