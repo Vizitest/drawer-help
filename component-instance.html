@@ -24,7 +24,7 @@
       <div class="video">
         <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe
-            src="https://player.vimeo.com/video/882395005?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+            src="https://player.vimeo.com/video/887995718?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
             frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             style="
@@ -44,84 +44,37 @@
         <!-- INTRO -->
         <div class="intro">
           <p>
-            The Instance Component instantiates a class that is used in your
-            Test Configuration. It uses
-            <strong>Equivalence Class Partitioning</strong>, a powerful and
-            logical way of defining test case data.
-          </p>
-          <p>
-            If you are new to Vizitest, we recommend watching the whole video to
-            see how Equivalence Class Partitioning works. You can also use the
-            buttons below to jump to specific points in the video or docs.
+            An Instance Component is inserted either by directly searching for
+            and inserting a class or, more usuually, by inserting a non-static
+            method.
           </p>
           <!-- MAIN DOCS LINK -->
           <a href="https://docs.vizitest.com/instance-component.html">
             <div class="main-docs-link">Instance Component - Docs</div>
           </a>
-          <!-- WARNING -->
-          <h3 style="text-align: center; margin-top: 40px; color: red">
-            Please ignore the video and video link buttons. We are preparing a
-            brand new video. Docs links are working.
-          </h3>
         </div>
         <!-- TERMS -->
         <div class="terms">
-          <!--  OVERVIEW -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Quick Overview</p>
-              <!-- <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i> -->
-              <a href="https://docs.vizitest.com/instance-component.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              <p>
-                The Instance Component is automatically added if you add a
-                Method Component that references a non-static method. If your
-                method does not need to reference the Instance Data, then you do
-                not need to configure the Equivalence Classes in the Instance
-                Component.
-              </p>
-              <p>
-                If you do need to instantiate the a Class, then you should
-                configure Equivalence Classes and Representative values.
-                Understanding this concept is important to using Vizitest in
-                general. You should take the time to understand Equivalence
-                Class Partitioning. Once understood it will quickly become
-                second nature.
-              </p>
-            </div>
-          </div>
 
           <!-- EC Partitioning -->
           <div class="item-row">
             <div class="title-row">
               <p class="item-text">Equivalence Class Partitioning</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
-              ></i>
               <a href="https://docs.vizitest.com/theory-ecs.html"
                 ><i class="fa-light fa-book button"></i
               ></a>
             </div>
             <div class="summary-row">
-              A technique for dividing input and output data into sets of
-              equivalent values. This is useful for generating test cases. This
-              will make a lot more sense if you watch the video.
+              Vizitest uses this powerful technique extensively. The docs link contains more information about Equivalence Class Partitioning.
             </div>
           </div>
           <!-- EC -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Working with Equivalence Classes</p>
+              <p class="item-text">Adding Equivalence Classes</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Adding Equivalence Classes`)"
               ></i>
               <a
                 href="https://docs.vizitest.com/ec-r-value-settings.html#adding-an-equivalence-class-to-an-instance"
@@ -129,18 +82,18 @@
               ></a>
             </div>
             <div class="summary-row">
-              In an Instance Component, you would typically have a valid and an
-              invalid Equivalence Class but you can add more if required. You
-              can then add Representative Values to these.
+              In an Instance Component, you would typically have at least a valid and an
+              invalid Equivalence Class but you can add more if required. Here we add several.
             </div>
           </div>
+
           <!--  R VALUE -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Working with Representative Values</p>
+              <p class="item-text">Adding Representative Values</p>
               <i
                 class="fa-light fa-video button"
-                onclick="playVideo(`Method Configuration`)"
+                onclick="playVideo(`Adding Values`)"
               ></i>
               <a
                 href="https://docs.vizitest.com/ec-r-value-settings.html#adding-a-representative-value"
@@ -154,7 +107,77 @@
               instantiation and will be available in the Test Case Table.
             </div>
           </div>
+
+          <!-- MANUAL TC -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Adding an individual Test Case</p>
+              <a
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              In many cases, you will want to test with specific cases you
+              choose rather than asking Vizitest to generate them for you. Click the docs link for more information.
+            </div>
+          </div>
+
+          <!--  AUTOMATIC TC -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Automatically generating Test Cases</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Test Cases`)"
+              ></i>
+              <a
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              Vizitest uses the best-practice "Pairwise Combination" algorithm
+              to automatically generate Test Cases for you. It generates the
+              optimal number of test cases, not every possible test case. The
+              more Representative Values you have, the more Test Cases you will
+              end up with.
+            </div>
+          </div>          
         </div>
+
+          <!--  CODEGEN -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Generating and running test code</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Generate and run test code`)"
+              ></i>
+              <a href="https://docs.vizitest.com/codegen.html"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              Once you've matched your inputs and outputs, you're ready to
+              generate and run your test code.
+            </div>
+          </div>        
+
+          <!--  BOUNDARY VALUES -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Boundary Values</p>
+              <a href="https://docs.vizitest.com/theory-ecs.html#boundary-value-analysis"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              <strong>Boundary</strong> value analysis</strong> is a valuable testing technique. 
+              There's an example video chapter on boundary values in the help for the Method Component.
+            </div>
+          </div>
+        </div>        
       </div>
     </div>
   </body>
