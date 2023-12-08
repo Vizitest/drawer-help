@@ -7,9 +7,9 @@ var _videoLength
 var _endTime
 var _paused
 
-player.on("play", function () {
-  console.log("Played the video");
-});
+// player.on("play", function () {
+//   console.log("Played the video");
+// });
 
 player.getVideoTitle().then(function (title) {
   getChapters()
@@ -41,7 +41,7 @@ const playVideo = (chapterName) => {
 const getChapters = () => {
   player.getChapters().then(function (chapters) {
     _chapters = chapters
-    console.log(_chapters)
+    // console.log(_chapters)
   }).catch(function (error) {
     // An error occurred
   });
@@ -51,7 +51,7 @@ const monitorPosition = () => {
   player.getPaused().then(result => _paused = result)
   player.getCurrentTime().then(function (time) {
     if (_paused) return
-    console.log('time:', time + " -> " + _endTime);
+    // console.log('time:', time + " -> " + _endTime);
     if (time >= _endTime) {
       player.pause()
       _paused = false
