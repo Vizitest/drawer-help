@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="./help.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap"
+          rel="stylesheet"
+  />
+</head>
+
+<body>
+<div class="container">
+  <!-- VIDEO -->
+  <div class="video">
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+              src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+              title="Vizitest Overview"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./vimeo.js"></script>
+  </div>
+  <div class="main-content">
+
+    <!-- ITEMS -->
+    <div class="terms">
+
+      <!-- Intro -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Overview</p>
+        </div>
+        <div class="summary-row">
+          The above video explains the main concepts.
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Referencer component</p>
+        </div>
+        <div class="summary-row">
+          APIs are created and configured in the left sidebar. When you create a new test, you reference one of these APIs. You will see the available servers you have configured as well as which server is currently active.
+          <img src="./images/referencer/referencer.png"  alt="referencer component"/>
+        </div>
+      </div>
+
+      <!-- Purpose -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Purpose</p>
+        </div>
+        <div class="summary-row">
+          The purpose of the Referencer component is to allow commonly used headers and cookies as well as security configurations to be applied to a test.
+          This prevents having to add them to each test.
+          You can select which items you want to use in the Referencer component and they will then be applied to the test.
+        </div>
+      </div>
+
+      <!-- Change active server -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Change active server</p>
+        </div>
+        <div class="summary-row">
+          You can change the active server for an API by selecting it from the dropdown beneath the API name in the left sidebar. When you do this, the referencer will also change to reflect this.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
