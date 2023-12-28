@@ -12,10 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/a02dd6ac3d.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
@@ -25,7 +21,6 @@
         <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe
             src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
-            frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             style="
               position: absolute;
@@ -41,216 +36,86 @@
         <script src="./vimeo.js"></script>
       </div>
       <div class="main-content">
-        <!-- INTRO -->
-        <div class="intro">
-          <!-- MAIN DOCS LINK -->
-          <a href="https://docs.vizitest.com/method-component.html">
-            <div class="main-docs-link">Method Component - Docs</div>
-          </a>
-        </div>
-        <!-- TERMS -->
-        <div class="terms">
-          <!-- Search for Method -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Finding and adding a method to test</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Searching for the method`)"
-              ></i>
-              <a href="https://docs.vizitest.com/theory-ecs.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              A technique for dividing input and output data into sets of
-              equivalent values. This is useful for generating test cases. This
-              will make a lot more sense if you watch the video.
-            </div>
-          </div>
-          <!-- EC Partitioning -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Equivalence Class Partitioning</p>
 
-              <a href="https://docs.vizitest.com/theory-ecs.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
+        <!-- ITEMS -->
+        <div class="terms">
+          <!-- Intro -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">User Guide</p>
             </div>
             <div class="summary-row">
-              A technique for dividing input and output data into sets of
-              equivalent values. This is useful for generating test cases. This
-              will make a lot more sense if you watch the video. Refer to the
-              docs for a more detailed explanation.
+              The above video explains the main concepts. The User Guide walks you through the creation of several endpoints tests.
+              The <a href="https://docs.vizitest.com/test-editor.html" target="_blank">Test Editor section</a> is a good place to start.
             </div>
           </div>
+
+          <!-- Header -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">The Header</p>
+            </div>
+            <div class="summary-row">
+              Core purpose is to set the REST method and the endpoint path. Also used to 'Quick Play' the request and examine the response.
+            </div>
+            <img src="images/endpoint/endpoint-header.png" alt="endpoint header"/>
+          </div>
+
+          <!-- PATH VARIABLES -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Path variables</p>
+            </div>
+            <div class="summary-row">
+              Path variables will automatically appear if you include path variables in the endpoint path. For example, <code>users/{uid}</code> will create a <code>uid</code> variable.
+              <img class="screenshot" style="max-width: 400px" src="images/endpoint/path-variable.png" alt="path variable"/>
+            </div>
+          </div>
+
+          <!-- General Request/Response Info -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Request and Expected Response overview</p>
+            </div>
+            <div class="summary-row">
+              All sections are optional. Add items to any section by hovering in the section title then pressing the + button
+              <img class="screenshot" style="max-width: 400px" src="images/endpoint/add-section-item.png" alt="section header hover"/>
+            </div>
+          </div>
+
           <!-- EC -->
           <div class="item-row">
             <div class="title-row">
               <p class="item-text">Creating Equivalence Classes</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Adding Equivalence Classes`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/ec-r-value-settings.html#adding-an-equivalence-class-to-a-method"
-                ><i class="fa-light fa-book button"></i
-              ></a>
             </div>
             <div class="summary-row">
-              An Equivalence class is a set of data, whose Representative Values
-              are all considered to yield the same result when used for a method
-              input parameter. When used in the Output section of the component,
-              it contains a set of values, all of which are considered valid.
-            </div>
-          </div>
-          <!--  R VALUE -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Adding Representative Values</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Adding Values`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/ec-r-value-settings.html#adding-a-representative-value"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Representative Values are children of Equivalence Classes. Often,
-              a single value within an Equivalence Class is sufficient for Test
-              Case creation. Values will be available in the Test Case Table.
-            </div>
-          </div>
-          <!--  OUTPUT - RETURN VALUES -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Return Values</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Return values`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/practice-ecs.html#output-expected-values"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              The Return Values deal with the data returned by the method. These
-              are also structured as Equivalence Classes and Representative
-              values.
-            </div>
-          </div>
-          <!--  OUTPUT - EXCEPTIONS -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Exceptions</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Exceptions`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/practice-ecs.html#output-exceptions"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              If the method throws an <strong>Exception</strong>, you can choose
-              from a list of all Exceptions or use the general Exception for any
-              exception.
+              In all sections, the <strong>Valid</strong> Equivalence Class is automatically created, with a default value, when you add a section item. Hover to get the <strong>+ Equivalence Class</strong> button as shown below.
+              <img class="screenshot" style="max-width: 500px" src="images/endpoint/equivalence-classes.png" alt="equivalence classes"/>
             </div>
           </div>
 
-          <!--  OUTPUT - CUSTOM ASSERTIONS -->
+          <!-- VALUES -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Custom Assertions</p>
-              <a href="https://docs.vizitest.com/custom-assertions.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
+              <p class="item-text">Adding Values</p>
             </div>
             <div class="summary-row">
-              Coming soon, You can write your own
-              <strong>Custom</strong> Assertion code to evaluate the data
-              returned and assert a true or false result.
+              To add a new value that you want to test, you add it within an equivalence class. Hover on the equivalence class row and press the <strong>+ Value</strong> button. You can then edit the default value that is added to the list.
+              <img class="screenshot" style="max-width: 400px" src="images/endpoint/add-rvalues.png" alt="add values"/>
             </div>
           </div>
 
-          <!--  OUTPUT - SIDE EFFECTS -->
+          <!--  SCRIPTS -->
           <div class="item-row">
             <div class="title-row">
-              <p class="item-text">Side Effects</p>
-              <a href="https://docs.vizitest.com/side-effects.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
+              <p class="item-text">Scripting</p>
             </div>
             <div class="summary-row">
-              Coming soon. Used in combination with the Instance Component, this
-              allows you to detect whether the method modified an Instance. A
-              Test Case in the Test Case Table can then examine the side effect
-              to determine if the test should pass or fail.
-            </div>
-          </div>
-
-          <!--  TEST CASE TABLE -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Test Case Table</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Generating Test Cases`)"
-              ></i>
-              <a href="https://docs.vizitest.com/test-case-table.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Once you have configured your Inputs and Outputs (and assuming
-              you're not using Custom Assertions or Side Effects), you might
-              want to look at the <strong>Test Case Table</strong>. This should
-              already be on the canvas.
-            </div>
-          </div>
-
-          <!--  CODEGEN -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Generating and running test code</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Generating the test code`)"
-              ></i>
-              <a href="https://docs.vizitest.com/test-case-table.html"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Once you've matched your inputs and outputs, you're ready to
-              generate and run your test code.
-            </div>
-          </div>
-
-          <!--  BOUNDARY VALUES -->
-          <div class="item-row">
-            <div class="title-row">
-              <p class="item-text">Boundary Values</p>
-              <i
-                class="fa-light fa-video button"
-                onclick="playVideo(`Boundary values`)"
-              ></i>
-              <a
-                href="https://docs.vizitest.com/theory-ecs.html#boundary-value-analysis"
-                ><i class="fa-light fa-book button"></i
-              ></a>
-            </div>
-            <div class="summary-row">
-              Boundary values are often very important in detecting errors. See
-              how to configure Equivalence Classes and their values to deal with
-              them.
+              Vizitest lets you write your own pre- and post-request hook scripts in any programming language. You can access and manipulate request and response data and even create your own test cases. Please <a href="https://docs.vizitest.com/scripting.html" target="_blank">refer to the documentation</a> for details.
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </body>
