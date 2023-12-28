@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="./help.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap"
+          rel="stylesheet"
+  />
+</head>
+
+<body>
+<div class="container">
+  <!-- VIDEO -->
+  <div class="video">
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+              src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+              title="Vizitest Overview"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./vimeo.js"></script>
+  </div>
+  <div class="main-content">
+
+    <!-- ITEMS -->
+    <div class="terms">
+
+      <!-- Intro -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Overview</p>
+        </div>
+        <div class="summary-row">
+          The above video explains the main concepts.
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">The Test Case Table</p>
+        </div>
+        <div class="summary-row">
+          When you run tests from the test case table, or press the green Quick Play icon in the Endpoint header, the results are displayed in the Execution Results component.
+          <img src="./images/api-results/execution-results.png"  alt="test execution results"/>
+        </div>
+      </div>
+
+      <!-- Row details -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Row details</p>
+        </div>
+        <div class="summary-row">
+          Each top level row contains the summary information for each test. There are as may rows as there are test cases multiplied by the number of Endpoints under test.
+        </div>
+      </div>
+
+      <!-- Hide/show tct -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Hiding and showing the test case table</p>
+        </div>
+        <div class="summary-row">
+          If you ran a test using the Quick Play icon in the Endpoint component header and have never look at test cases, the test case table will be hidden.
+          Pressing the <strong>Show Test Cases</strong>' button will show the table. You can hide the test case table when visible by pressing the <strong>Hide Test Cases</strong> button.
+        </div>
+      </div>
+
+      <!-- History-->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Execution history</p>
+        </div>
+        <div class="summary-row">
+          The header area shows execution history. You can select from the history to see previous executions for the loaded test configuration.
+        </div>
+      </div>
+
+      <!-- Drill down-->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Drill down</p>
+        </div>
+        <div class="summary-row">
+          If there is only one test result then the results are auto-expanded. Otherwise, the table is collapsed and you can drill down by clicking anywhere in a row.
+        </div>
+      </div>
+
+      <!-- Response Colors  -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Response icon and colors</p>
+        </div>
+        <div class="summary-row">
+          <p>When looking at the results, if there is a grey circle next to a response item, it indicates that this was not tested and therefore has no impact on whether the test case passed or failed.</p>
+          <p>If green, then the item was tested and has the expected result.</p>
+          <p>If red, then the was was tested and did not contain the expected result. You can hover over the icon to see what result was expected.</p>
+        </div>
+      </div>
+
+      <!-- Endpoint navigation -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Navigate to Endpoint</p>
+        </div>
+        <div class="summary-row">
+          You can navigate to an endpoint from the table by clicking in the blue pill that displays the endpoint name.
+        </div>
+      </div>
+
+      <!-- TM Group execution-->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Executing multiple test configurations</p>
+        </div>
+        <div class="summary-row">
+          You can also execute all test configurations in a Test Manager group and see a consolidated report. <a href="https://docs.vizitest.com/executing-multiple-test-configurations.html">Click here</a> for more details.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
