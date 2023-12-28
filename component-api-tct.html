@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="./help.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- VIDEO -->
+      <div class="video">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Vizitest Overview"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="./vimeo.js"></script>
+      </div>
+      <div class="main-content">
+        <!-- INTRO -->
+        <div class="intro">
+          <!-- MAIN DOCS LINK -->
+          <a href="https://docs.vizitest.com/test-case-table.html">
+            <div class="main-docs-link">Test Case Table - Docs</div>
+          </a>
+        </div>
+        <!-- TERMS -->
+        <div class="terms">
+          <!-- RECAP  -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Context</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Adding Values`)"
+              ></i>
+            </div>
+            <div class="summary-row">
+              If you want to see information and background on where the data
+              for the following video sections is taken from
+            </div>
+          </div>
+
+          <!-- MANUAL TC -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Adding an individual Test Case</p>
+              <a
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              In many cases, you will want to test with specific cases you
+              choose rather than asking Vizitest to generate them for you.
+            </div>
+          </div>
+
+          <!--  AUTOMATIC TC -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Automatically generating Test Cases</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Generating Test Cases`)"
+              ></i>
+              <a
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              Vizitest uses the best-practice "Pairwise Combination" algorithm
+              to automatically generate Test Cases for you. It generates the
+              optimal number of test cases, not every possible test case. The
+              more Representative Values you have, the more Test Cases you will
+              end up with.
+            </div>
+          </div>
+
+          <!--  MATCHING OUTPUTS -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Matching outputs to inputs</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Matching outputs`)"
+              ></i>
+              <a
+                href="https://docs.vizitest.com/test-case-table.html#creating-test-cases"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              Vizitest uses the best-practice "Pairwise Combination" algorithm
+              to automatically generate Test Cases for you. It generates the
+              optimal number of test cases, not every possible test case. The
+              more Representative Values you have, the more Test Cases you will
+              end up with.
+            </div>
+          </div>
+
+          <!--  CODEGEN -->
+          <div class="item-row">
+            <div class="title-row">
+              <p class="item-text">Generating and running test code</p>
+              <i
+                class="fa-light fa-video button"
+                onclick="playVideo(`Generating the test code`)"
+              ></i>
+              <a href="https://docs.vizitest.com/codegen.html"
+                ><i class="fa-light fa-book button"></i
+              ></a>
+            </div>
+            <div class="summary-row">
+              Once you've matched your inputs and outputs, you're ready to
+              generate and run your test code.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
