@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="./help.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap"
+          rel="stylesheet"
+  />
+</head>
+
+<body>
+<div class="container">
+  <!-- VIDEO -->
+  <div class="video">
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+              src="https://player.vimeo.com/video/887952894?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+              title="Vizitest Overview"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./vimeo.js"></script>
+  </div>
+  <div class="main-content">
+
+    <!-- ITEMS -->
+    <div class="terms">
+
+      <!-- Intro -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Overview</p>
+        </div>
+        <div class="summary-row">
+          The above video explains the main concepts.
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Working with APIs</p>
+        </div>
+        <div class="summary-row">
+          You can add APIs you want to work with, then add servers (development, staging, production etc.)  define regularly used headers, security configuration.
+        </div>
+      </div>
+
+      <!-- OpenAPI -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">OpenAPI</p>
+        </div>
+        <div class="summary-row">
+          In Feb 2024 it will be possible to import OpenAPI specifications. This will dramatically shorten test configuration times.
+        </div>
+      </div>
+
+      <!-- Adding an API -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Adding a new API</p>
+        </div>
+        <div class="summary-row">
+          CLick the +API button to define an API. Once defined, you will configure it.
+        </div>
+      </div>
+
+      <!-- Changing the API name -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Changing the API name</p>
+        </div>
+        <div class="summary-row">
+          CLick in the API name to edit it.
+        </div>
+      </div>
+
+      <!-- Configure servers -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Configure Servers</p>
+        </div>
+        <div class="summary-row">
+          You should create one or more servers for an API. This consists of a friendly name and a hostname and base path.
+          <img src="./images/api-config/api-servers.png"  alt="test execution results" style="max-width: 500px"/>
+        </div>
+      </div>
+
+      <!-- Headers and cookies -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Configure headers and cookies</p>
+        </div>
+        <div class="summary-row">
+          You can add any headers and cookies that are regularly used along with default values. You can later choose from these when you configure a test.
+        </div>
+      </div>
+
+      <!-- Headers and cookies -->
+      <div class="item-row">
+        <div class="title-row">
+          <p class="item-text">Configure security</p>
+        </div>
+        <div class="summary-row">
+          Security is currently not available but coming soon. This will support common security methods such as Basic Authenticaion, oAuth etc.
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
